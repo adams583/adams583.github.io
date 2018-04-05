@@ -209,7 +209,7 @@ wheel3.createWheel();
 
 // contact wheel functionality 
 var wheel3Text = document.getElementById("contact-wheel-title");
-wheel3.navItems[0].navigateFunction = function () { wheel3Text.innerHTML = "Feel free to <a href='adam.skrocki@gmail.com'>email </a>me..." };
+wheel3.navItems[0].navigateFunction = function () { wheel3Text.innerHTML = "Feel free to <a href='mailto:adam.skrocki@gmail.com'>email </a>me..." };
 wheel3.navItems[1].navigateFunction = function () { wheel3Text.innerHTML = "...or message me on <a href='http://www.linkedin.com/in/adamskrocki'>LinkedIn.</a>"};
 wheel3.navItems[2].navigateFunction = function () { wheel3.spreadWheel() };
 wheel3.navigateWheel(0);
