@@ -217,7 +217,7 @@ wheel3.navigateWheel(0);
 // Gallery setup
 $('#gallery').justifiedGallery({
     rowHeight : 200,
-    lastRow : 'nojustify',
+    lastRow : 'hide',
     margins : 0,
     captions: false,
     imageAnimationDuration: 500
