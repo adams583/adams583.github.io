@@ -1,0 +1,463 @@
+.iconlink {
+    color:grey;
+    transition: 0.5s;
+}
+
+
+body, html{
+    height: 100%;
+    margin:0;
+    color: grey;
+    font-family: 'Tahoma','Verdana','Segoe',sans-serif;
+    font-weight: lighter;
+    background-color: white;
+}
+
+.img1 {
+    background-image: url(../img/CartoonMe.jpg);
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+    background-attachment: fixed;
+    display: flex;
+    
+}
+
+#main-wheel {
+    display: flex; 
+    width: 100%;
+}
+
+#main-wheel>div {
+    margin: auto;
+    flex: 1; 
+    height: 600px;
+    display: flex;
+}
+
+#about {
+    display: flex; 
+    width: 100%;
+    background-color: rgb(229, 230, 233);
+}
+
+#about > div {
+    margin: auto; 
+    height: 600px;
+    display: flex; 
+    flex: 1;
+}
+
+.about-content-option {
+    position: absolute; 
+    width: 70%;
+    height: 100%;
+    margin: auto; 
+}
+
+.about-content-option > div {
+    display: none;
+    margin: auto; 
+    text-align: left;
+    width: 100%;
+}
+
+.about-content-option .text {
+    flex: 2;
+}
+
+.about-content-option .text > p {
+    font-size: 1.2em;
+    margin-top: 0;
+    line-height: 200%;
+}
+
+.icon {
+    margin: auto;
+}
+
+.text-title {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.about-content-option .icon {
+    flex: 1;
+    text-align: center; 
+}
+
+strong {
+    font-size: 6em;
+}
+
+#about-wheelDiv {
+    height: 100%;
+    width: 100%;
+}
+
+#main-wheelDiv {
+    width: 80%;
+    height: 80%;
+}
+
+#wheelTitle {
+    font-weight: 100;
+    font-size: 2em;
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    padding-right: 10%;
+}
+
+#wheelTitle >a {
+    color: #2e9cca;
+}
+
+/*.img1 {
+    background-color: #ebebeb;
+    height: 100%;
+    background-position: center;
+    position: relative;
+    display: flex;
+}*/
+
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+.home-content {
+    display: flex;
+    width: 100%; 
+}
+
+.home-content > div {
+    flex: 1;
+    margin: auto;
+}
+
+.home-text {
+    width: 100%;
+    margin: auto;
+    padding-left: 75px; 
+}
+
+.home-text p {
+    font-size: 1.5em;
+}
+
+#wheelDiv {
+    height: 100%;
+}
+
+.namebackground {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 10px; 
+    font-size: 2em;
+}
+
+.txt-rotate {
+    color: #2e9cca; 
+}
+
+.link:hover, .btn:hover {
+    opacity: 0.7;
+    font-size: 97%;
+    color: black;
+}
+
+#navbackground {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.navbackground-element {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    display: flex;
+}
+
+.navbackground-container {
+    flex: 1;
+    display: flex;
+}
+
+.navbackground-element > * {
+    margin: auto;
+}
+
+.navbackground-container > a {
+    font-size: 5em;
+    opacity: 0.25;
+    border: solid thin;
+    transition: 500ms;
+}
+
+.navbackground-container > .link:hover {
+    opacity:0.5;
+    font-size: 5em;
+}
+
+#navbar {
+    height: 70px; 
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    padding-top: 0px;
+    transition: 500ms;
+    color: grey;
+    display: flex; 
+    font-size: .9em; 
+}
+
+#navbar a:hover {
+    color: inherit;
+    opacity: 0.5;
+    font-size: inherit;
+}
+
+#navbar > div {
+    margin: auto;
+}
+
+.logo {
+    flex: 4; 
+    padding-left: 5%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-section {
+    padding-right: 5%; 
+    overflow: hidden;
+    transition: 300ms; 
+    flex: 3; 
+    
+}
+
+#navbar span {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: grey; 
+    display: inline-block;
+    margin: 5px; 
+}
+
+.transparent {
+    opacity: 0;
+ }
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main h1 {
+    font-size: 5em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+main h2 {
+    font-size: 1em;
+    font-weight: lighter;
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+    text-align: center; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+main > section {
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.main-content {
+    width: 1000px;
+    line-height: 30px;
+    margin-bottom: 80px;
+}
+
+#photography {
+    width: 80%;
+    background-color: rgb(229, 230, 233);
+}
+
+#about hr {
+    width: 95%;
+}
+
+hr {
+    margin-left: 0;
+    height: 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Remove default outline from focus element */
+*:focus {
+    outline: 0;
+}
+
+footer, main {
+    background-color: #131313;
+}
+
+.active > * {
+    color: #2e9cca; 
+    transition: 1s;
+}
+
+.image-text-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #131313;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.image-text-container > p{
+    width: 600px;
+    line-height: 30px;
+    text-align: left;
+    margin: 25px;
+}
+
+#projects {
+    background-image: url(../img/photography-background.jpg);
+}
+
+.section-with-background {
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-container {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 100px;
+}
+
+#projects a {
+    color: #2e9cca; 
+}
+
+.section-header {
+    margin: auto;
+    padding: 50px;
+}
+
+/* for elements aligned on the right side of div */ 
+.right {
+    float: right; 
+}
+
+.rounded {
+    border-radius: 30px;
+}
+
+#contact > div{
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+#contact {
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    background-image: url(../img/desk.jpeg);
+}
+
+#contact-wheelDiv {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.gallery-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#gallery > a:hover {
+    opacity: .9;
+}
+
+#projects-header,
+#photography-header {
+    max-width: 400px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+#contact-wheel-title {
+    margin: auto;
+    font-size: 2em;
+    text-align: left;
+    width: 100%;
+}
+
+#contact-wheel-title a {
+    color: #2e9cca;
+}
+
+#contact-title {
+    text-align: center;
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 100px;
+}
+
+#contact-content {
+    width: 100%;
+    flex-direction: row;
+}
+
+#contact-content > div {
+    flex:1;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+#contact a {
+    color: #2e9cca;
+}
+
+.center {
+    text-align: center;
+}

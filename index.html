@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang='en-US'>
+    <head>
+        <title>Adam Skrocki - Personal Website</title>
+        <meta name="description" content="Hi! I'm a computer science student at Cornell
+        University looking for a 2018 summer internship. My interests include data science,
+        machine learning, digital photography and editing, and music. I'm always up for a 
+        challenge and love to learn at every opportunity I can get." />
+        <meta name="keywords" content="adam skrocki, cornell student, computer science, 
+        data science,personal website" />
+        <!-- CSS --> 
+        <link rel='stylesheet' href='css/style.css'/>
+        <!-- Fonts --> 
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <!-- jQuery --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- D3.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+        <!-- Radar js library script --> 
+        <!--<script type='text/javascript' src='radar.js'></script>-->
+        <!-- Wheelnav js files -->
+        <script type='text/javascript' src='js/wheelnav.js'></script>
+        <script type="text/javascript" src="js/raphael.min.js"></script>
+        <script type="text/javascript" src="js/raphael.icons.min.js"></script>
+        <!-- For justified gallery --> 
+        <link rel="stylesheet" href="css/justifiedGallery.min.css" />
+        <script src="js/jquery.justifiedGallery.min.js"></script>
+    </head>
+    <body>
+
+<!--    ** Background image and overlaying content **    -->
+        <div class='img1'>
+            <div id='navbackground'></div>
+            <div class='home-content'>
+                <div class='home-text'>
+                    <span>
+                        <span class='namebackground'>Adam Skrocki</span>
+                        <p>I love
+                        <span class="txt-rotate" data-period="2000"
+                            data-rotate='[ "programming.", "learning.", "music.", "photography.", "a good time." ]'></span>
+                        </p>
+                        <!-- Social Media Links
+                            <p>
+                            <a href="" target="_blank" class='iconlink link' download><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                            <a href='adam.skrocki@gmail.com' class='iconlink link'><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
+                            <a href='http://www.linkedin.com/in/adamskrocki' class='iconlink link'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </p> --> 
+                    </span>
+                </div>
+            </div>
+        </div>
+
+<!--    ** Optional NavBar **   -->
+        <nav id='navbar' class='transparent'>
+            <div class='logo'>
+                <a>AdamSkrocki</a>
+            </div>
+            <div class='nav-section'>
+                <span><a href='#about' class='link'>About   </a></span>
+                <span><a href='#projects' class='link'>Projects   </a></span>
+                <span><a href='#photography' class='link'>Photography   </a></span>
+                <span><a href='#contact' class='link'>Contact</a></span>
+            </div>
+        </nav>
+
+<!--    ** Sections **   -->
+        <main class="sections">
+            <section id='main-wheel'>
+                <div class='wheelDiv-container'>
+                    <div id='main-wheelDiv'>
+                    </div>
+                </div>
+                <div>
+                    <div id='wheelTitle'></div>
+                </div>
+            </section>
+<!--    ** About **   -->
+            <section id='about'>
+                <div></div>
+                <div class='wheelDiv-container'>
+                    <div id='about-wheelDiv'></div>
+                </div>
+                <div class='about-content-option'>
+                    <div id='about-interests'>
+                        <div class='icon'><strong><i class="fas fa-heart"></i></strong></div>
+                        <div class='text'>
+                            <div class='text-title'>What I like to do.</div>
+                            <hr>
+                            <p>
+                                I feel best when I'm solving problems, playing music, helping someone, being active, or spending time with 
+                                people close to me. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='about-content-option'>
+                    <div id='about-values'>
+                        <div class='icon'><strong><i class="fas fa-comments"></i></strong></div>
+                        <div class='text'>
+                            <div class='text-title'>My thoughts.</div>
+                            <hr>
+                            <p>
+                                I believe in always working hard, always challenging yourself, always following through, 
+                                and always pursuing something that matters to you. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='about-content-option'>
+                    <div id='about-goals'>
+                        <div class='icon'><strong><i class="fas fa-user"></i></strong></div>
+                        <div class='text'>
+                            <div class='text-title'>My goals.</div>
+                            <hr>
+                            <p>
+                                In the next few years, I want to work at a startup, start an online business, commit to learning another language,
+                                play more music, travel more, and always continue to challenge myself. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='about-content-option'>
+                    <div id='about-location'>
+                        <div class='icon'><strong><i class="fas fa-location-arrow"></i></strong></div>
+                        <div class='text'>
+                            <div class='text-title'>Where to find me.</div>
+                            <hr>
+                            <p>
+                                I grew up in Flagstaff, Arizona, a small and rural area where I developed a love for nature. Now during the school
+                                year you'll find me in Ithaca, New York for school, but I'm hoping to spend my summers somewhere on the west coast.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='about-content-option'>
+                    <div id='about-education'>
+                        <div class='icon'><strong><i class="fas fa-graduation-cap"></i></strong></div>
+                        <div class='text'>
+                            <div class='text-title'>I'm always learning.</div>
+                            <hr>
+                            <p>
+                                I'm a freshman at Cornell University studying computer science. I'm lucky to be a part of the community, and 
+                                the opportunities there are endless. While my classes keep me busy, I'm also a big believer in independent learning - 
+                                it's important for me to make time to go online or grab a book and teach myself more about the things I'm most interested in. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!--    ** Projects **   -->
+            <section id='projects' class="section-with-background">
+                <div class="section-header center">
+                    <div id='projects-header' class='text-title center'>Here are some of the things I've been up to.</div>
+                </div>
+                <div id="projects-container">
+                    <div class="image-text-container"> 
+                        <img src="img/tedxlogo.jpg" width="650"/>
+                        <p><b>TEDxCornell</b> <br>I am IT lead for TEDxCornell 2018. In IT, I'm working on the event website (tedxcornell.com), but I'm also
+                            reaching out to speakers and working on advertisement and general design. I hope to stay involved while I'm at Cornell, expanding 
+                            the team and hosting a more impressive event each year. 
+                        </p>
+                    </div>
+                    <div class="image-text-container">
+                        <img src="img/datascience.jpg" width="650"/>
+                        <p><b>Cornell Data Science</b> <br>I'm a part of Cornell Data Science's deep learning team, which 
+                        explores the development and application of neural networks. Neural networks are a type of machine learning 
+                        algorithms loosely based off of how our own brains work, with many "neurons" communicating and producing a response
+                        given an input. I'm currently working on implementing convolutional and recurrent neural networks and 
+                        I plan on completing a project to generate original music with deep learning in the near future.</p>
+                    </div> 
+                </div>
+            </section>
+<!--    ** Photos **   -->
+            <section id='photography' class="section-with-background">
+                <div class="section-header">
+                    <div id='photography-header' class='text-title'>Here are some of the photos I've taken.</div>
+                </div>
+                <div class='gallery-container'>
+                    <div id='gallery'>
+                        <a href='img/waterfall1_min.jpg' target='_blank' class='photo'>
+                            <img src='img/waterfall1_min.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/pools1.jpg' target='_blank' class='photo'>
+                            <img src='img/pools1.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/iceland1.jpg' target='_blank' class='photo'>
+                            <img src='img/iceland1.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/rockwall1.jpg' target='_blank' class='photo'>
+                            <img src='img/rockwall1.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/spires1.jpg' target='_blank' class='photo'>
+                            <img src='img/spires1.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/crater1.jpg' target='_blank' class='photo'>
+                            <img src='img/crater1.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/iceberg1.jpg' target='_blank' class='photo'>
+                            <img src='img/iceberg1.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/iceberg2.jpg' target='_blank' class='photo'>
+                            <img src='img/iceberg2.jpg' alt='Iceland' />
+                        </a>
+                        <a href='img/night1.jpg' target='_blank' class='photo'>
+                            <img src='img/night1.jpg' alt='San Diego, CA' />
+                        </a>
+                        <a href='img/tree.jpg' target='_blank' class='photo'>
+                            <img src='img/tree.jpg' alt='Honolulu, HI' />
+                        </a>
+                    </div>
+                </div>
+            </section>
+<!--    ** Contact **   -->
+            <section id='contact'>
+                <div id='contact-title' class='text-title'>
+                    Let's get in touch.
+                </div>
+                <div id='contact-content'>
+                    <div class='wheelDiv-container'>
+                        <div id='contact-wheelDiv'>
+                        </div>
+                    </div>
+                    <div>
+                        <div id='contact-wheel-title'></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+<!--    ** JavaScript **    --> 
+        <script type='text/javascript' src='js/script.js'></script>
+
+    </body> 
+</html>
