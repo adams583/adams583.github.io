@@ -135,11 +135,11 @@ wheel.createWheel();
 // Main wheel div functionality
 var wheelText = document.getElementById("wheelTitle");
 wheelText.innerHTML = "Welcome! This is my <a>personal website.</a> Thanks for visiting, and feel free to explore."
-wheel.navItems[0].navigateFunction = function () { wheelText.innerHTML = "Welcome! This is my <a>personal website.</a> Thanks for visiting, and feel free to explore." };
-wheel.navItems[1].navigateFunction = function () { wheelText.innerHTML = "Here's a little more <a href='#about'>about</a> me."};
+wheel.navItems[0].navigateFunction = function () { wheelText.innerHTML = "Welcome! This is my <a>personal website.</a> Thanks for visiting, and feel free to explore!" };
+wheel.navItems[1].navigateFunction = function () { wheelText.innerHTML = "Below you can find a little more <a href='#about'>about</a> me."};
 wheel.navItems[2].navigateFunction = function () { wheelText.innerHTML = "I'd love to <a href='#contact'>get in touch</a> about anything."};
-wheel.navItems[3].navigateFunction = function () { wheelText.innerHTML = "Here are some of the <a href='#photography'>photos</a> I've taken."};
-wheel.navItems[4].navigateFunction = function () { wheelText.innerHTML = "Take a look at some <a href='#projects'>projects</a> I've worked on."};
+wheel.navItems[3].navigateFunction = function () { wheelText.innerHTML = "Take a look at some of the <a href='#photography'>photos</a> I've taken."};
+wheel.navItems[4].navigateFunction = function () { wheelText.innerHTML = "Check out some of the <a href='#projects'>projects</a> I'm working on now."};
 
 // For About Wheel Div
 wheel2 = new wheelnav("about-wheelDiv");
