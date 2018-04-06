@@ -374,9 +374,9 @@ footer, main {
     flex-direction: column;
 }
 
-#aboutwheel-container {
-    height: 100%; 
-    width: 100%;
+#about-wheelDiv {
+    height: 80%;
+    width: 80%;
 }
 
 #projects-container {
