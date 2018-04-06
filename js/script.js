@@ -1,11 +1,4 @@
 
-let photo = document.getElementsByClassName('photo');
-Array.from(photo).forEach(photo => {
-    photo.addEventListener('mouseover',function() {
-        photo.focus();
-    })
-});
-
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         document.getElementById("navbar").classList.remove("transparent");
@@ -152,7 +145,7 @@ wheel.navItems[4].navigateFunction = function () { wheelText.innerHTML = "Take a
 wheel2 = new wheelnav("about-wheelDiv");
 wheel2.colors = ['#2e9cca'];
 wheel2.clickModeRotate = false;
-wheel2.wheelRadius = 0.7*wheel2.wheelRadius;
+wheel2.wheelRadius = 0.6*wheel2.wheelRadius;
 var wheel_width = document.getElementById('aboutwheel-container').offsetWidth;
 var wheel_height = document.getElementById('aboutwheel-container').offsetHeight;
 wheel2.centerX = wheel_width/1.4;
@@ -170,6 +163,12 @@ wheel2.createWheel();
 var about_contents = [document.getElementById('about-interests'),document.getElementById('about-values'),
 document.getElementById('about-goals'),document.getElementById('about-location'),document.getElementById('about-education')];
 var last_selected = about_contents[0]; 
+about_contents[0].style.display = 'none';
+about_contents[1].style.display = 'none';
+about_contents[2].style.display = 'none';
+about_contents[3].style.display = 'none';
+about_contents[4].style.display = 'none';
+
 wheel2.navItems[0].navigateFunction = function () { 
     last_selected.style.display = 'none';
     about_contents[0].style.display = 'flex';
