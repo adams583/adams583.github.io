@@ -374,9 +374,14 @@ footer, main {
     flex-direction: column;
 }
 
-#aboutwheel-container {
-    height: 100%; 
+#about-wheelDiv {
+    height: 100%;
     width: 100%;
+}
+
+#aboutwheel-container {
+    height: inherit; 
+    width: 100%; 
 }
 
 #projects-container {
