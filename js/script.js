@@ -1,5 +1,5 @@
 
-let photo = document.getElementsByClassName('photo');
+var photo = document.getElementsByClassName('photo');
 Array.from(photo).forEach(photo => {
     photo.addEventListener('mouseover',function() {
         photo.focus();
