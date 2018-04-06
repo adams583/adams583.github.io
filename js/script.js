@@ -152,7 +152,7 @@ wheel.navItems[4].navigateFunction = function () { wheelText.innerHTML = "Take a
 wheel2 = new wheelnav("about-wheelDiv");
 wheel2.colors = ['#2e9cca'];
 wheel2.clickModeRotate = false;
-wheel2.wheelRadius = 0.7*wheel2.wheelRadius;
+wheel2.wheelRadius = 0.6*wheel2.wheelRadius;
 var wheel_width = document.getElementById('aboutwheel-container').offsetWidth;
 var wheel_height = document.getElementById('aboutwheel-container').offsetHeight;
 wheel2.centerX = wheel_width/1.4;
