@@ -163,6 +163,12 @@ wheel2.createWheel();
 var about_contents = [document.getElementById('about-interests'),document.getElementById('about-values'),
 document.getElementById('about-goals'),document.getElementById('about-location'),document.getElementById('about-education')];
 var last_selected = about_contents[0]; 
+about_contents[0].style.display = 'none';
+about_contents[1].style.display = 'none';
+about_contents[2].style.display = 'none';
+about_contents[3].style.display = 'none';
+about_contents[4].style.display = 'none';
+
 wheel2.navItems[0].navigateFunction = function () { 
     last_selected.style.display = 'none';
     about_contents[0].style.display = 'flex';
