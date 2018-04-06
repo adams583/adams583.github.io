@@ -68,7 +68,7 @@ body, html{
 }
 
 .about-content-option > div {
-    display: none;
+    display: flex;
     margin: auto; 
     text-align: left;
     width: 100%;
