@@ -1,11 +1,4 @@
 
-var photo = document.getElementsByClassName('photo');
-Array.from(photo).forEach(photo => {
-    photo.addEventListener('mouseover',function() {
-        photo.focus();
-    })
-});
-
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         document.getElementById("navbar").classList.remove("transparent");
