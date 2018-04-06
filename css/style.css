@@ -47,14 +47,24 @@ body, html{
 
 #about > div {
     margin: auto; 
-    height: 100%;
+    height: inherit;
     display: flex; 
     flex: 1;
 }
 
-.about-content-option {
+#about-content-option-container {
+    width: 70%; 
     position: absolute; 
-    width: 70%;
+    margin-left: 0;
+    height: inherit; 
+}
+
+.about-content-option {
+    width: 100%;
+    position: absolute; 
+    display: flex; 
+    margin: auto;
+    height: inherit;
 }
 
 .about-content-option > div {
@@ -362,6 +372,11 @@ footer, main {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+}
+
+#aboutwheel-container {
+    height: 100%; 
+    width: 100%;
 }
 
 #projects-container {
