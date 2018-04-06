@@ -103,7 +103,7 @@ strong {
 }
 
 #about-wheelDiv {
-    height: 100%;
+    height: inherit;
     width: 100%;
 }
 
