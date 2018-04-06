@@ -128,6 +128,11 @@ wheel = new wheelnav("main-wheelDiv");
 wheel.markerEnable = true; 
 wheel.markerPathFunction = markerPath().PieLineMarker;
 wheel.colors = ['#2e9cca'];
+// Center wheel in its container 
+var wheel_width = document.getElementById('mainwheel-container').offsetWidth;
+var wheel_height = document.getElementById('mainwheel-container').offsetHeight;
+wheel.centerX = wheel_width/2.5;
+wheel.centerY = wheel_height/2.5;
 wheel.slicePathFunction = slicePath().DonutSlice; 
 wheel.wheelRadius = .7*wheel.wheelRadius;
 wheel.hoverPercent = .98;
@@ -144,52 +149,54 @@ wheel.navItems[3].navigateFunction = function () { wheelText.innerHTML = "Here a
 wheel.navItems[4].navigateFunction = function () { wheelText.innerHTML = "Take a look at some <a href='#projects'>projects</a> I've worked on."};
 
 // For About Wheel Div
-wheel = new wheelnav("about-wheelDiv");
-wheel.colors = ['#2e9cca'];
-wheel.clickModeRotate = false;
-wheel.wheelRadius = 0.7*wheel.wheelRadius;
-wheel.centerY = 300;
-wheel.centerX = 500;
-wheel.slicePathFunction = slicePath().TabSlice; 
-wheel.initWheel([icon.fave, icon.chat, icon.user, icon.loaction2, icon.edit]);
-wheel.navItems[0].sliceSelectedTransformFunction = sliceTransform().ScaleTitleTransform;
-wheel.navItems[1].sliceSelectedTransformFunction = sliceTransform().ScaleTransform;
-wheel.navItems[2].sliceSelectedTransformFunction = sliceTransform().RotateAlotTransform;
-wheel.navItems[3].sliceSelectedTransformFunction = sliceTransform().ScaleTransform;
-wheel.navItems[4].sliceSelectedTransformFunction = sliceTransform().RotateAlotTransform;
-wheel.createWheel();
+wheel2 = new wheelnav("about-wheelDiv");
+wheel2.colors = ['#2e9cca'];
+wheel2.clickModeRotate = false;
+wheel2.wheelRadius = 0.7*wheel2.wheelRadius;
+var wheel_width = document.getElementById('aboutwheel-container').offsetWidth;
+var wheel_height = document.getElementById('aboutwheel-container').offsetHeight;
+wheel2.centerX = wheel_width/1.4;
+wheel2.centerY = wheel_height/2;
+wheel2.slicePathFunction = slicePath().TabSlice; 
+wheel2.initWheel([icon.fave, icon.chat, icon.user, icon.loaction2, icon.edit]);
+wheel2.navItems[0].sliceSelectedTransformFunction = sliceTransform().ScaleTitleTransform;
+wheel2.navItems[1].sliceSelectedTransformFunction = sliceTransform().ScaleTransform;
+wheel2.navItems[2].sliceSelectedTransformFunction = sliceTransform().RotateAlotTransform;
+wheel2.navItems[3].sliceSelectedTransformFunction = sliceTransform().ScaleTransform;
+wheel2.navItems[4].sliceSelectedTransformFunction = sliceTransform().RotateAlotTransform;
+wheel2.createWheel();
 
 // About wheel div functionality 
 var about_contents = [document.getElementById('about-interests'),document.getElementById('about-values'),
 document.getElementById('about-goals'),document.getElementById('about-location'),document.getElementById('about-education')];
 var last_selected = about_contents[0]; 
-wheel.navItems[0].navigateFunction = function () { 
+wheel2.navItems[0].navigateFunction = function () { 
     last_selected.style.display = 'none';
     about_contents[0].style.display = 'flex';
     last_selected = about_contents[0]
 };
-wheel.navItems[1].navigateFunction = function () { 
+wheel2.navItems[1].navigateFunction = function () { 
     last_selected.style.display = 'none';
     about_contents[1].style.display = 'flex';
     last_selected = about_contents[1]
 };
-wheel.navItems[2].navigateFunction = function () {
+wheel2.navItems[2].navigateFunction = function () {
     last_selected.style.display = 'none';
     about_contents[2].style.display = 'flex';
     last_selected = about_contents[2]
 };
-wheel.navItems[3].navigateFunction = function () {
+wheel2.navItems[3].navigateFunction = function () {
     last_selected.style.display = 'none';
     about_contents[3].style.display = 'flex';
     last_selected = about_contents[3]
 };
-wheel.navItems[4].navigateFunction = function () {
+wheel2.navItems[4].navigateFunction = function () {
     last_selected.style.display = 'none';
     about_contents[4].style.display = 'flex';
     last_selected = about_contents[4]
 };
 
-wheel.navigateWheel(0);
+wheel2.navigateWheel(0);
 
 // Contact wheel div 
 wheel3 = new wheelnav("contact-wheelDiv");

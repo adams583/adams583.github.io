@@ -28,12 +28,13 @@ body, html{
 #main-wheel {
     display: flex; 
     width: 100%;
+    height: 600px;
 }
 
 #main-wheel>div {
     margin: auto;
     flex: 1; 
-    height: 600px;
+    height: 100%;
     display: flex;
 }
 
@@ -41,11 +42,12 @@ body, html{
     display: flex; 
     width: 100%;
     background-color: rgb(229, 230, 233);
+    height: 600px;
 }
 
 #about > div {
     margin: auto; 
-    height: 600px;
+    height: 100%;
     display: flex; 
     flex: 1;
 }
@@ -53,8 +55,6 @@ body, html{
 .about-content-option {
     position: absolute; 
     width: 70%;
-    height: 100%;
-    margin: auto; 
 }
 
 .about-content-option > div {
@@ -100,6 +100,7 @@ strong {
 #main-wheelDiv {
     width: 80%;
     height: 80%;
+    margin: auto;
 }
 
 #wheelTitle {
@@ -207,7 +208,7 @@ a {
 }
 
 #navbar {
-    height: 70px; 
+    height: 10%; 
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -294,12 +295,6 @@ footer {
     padding: 15px;
 }
 
-.main-content {
-    width: 1000px;
-    line-height: 30px;
-    margin-bottom: 80px;
-}
-
 #photography {
     width: 80%;
     background-color: rgb(229, 230, 233);
@@ -338,13 +333,20 @@ footer, main {
     background-color: #131313;
     margin-bottom: 50px;
     border-radius: 10px;
+    width: 50%;
 }
 
 .image-text-container > p{
-    width: 600px;
+    width: 90%;
     line-height: 30px;
     text-align: left;
-    margin: 25px;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.image-text-container > img {
+    width: 100%;
 }
 
 #projects {
@@ -445,12 +447,13 @@ footer, main {
 #contact-content {
     width: 100%;
     flex-direction: row;
+    height: 600px;
 }
 
 #contact-content > div {
     flex:1;
     width: 100%;
-    height: 600px;
+    height: 100%;
     display: flex;
 }
 
